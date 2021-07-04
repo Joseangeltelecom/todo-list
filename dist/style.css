@@ -23,7 +23,7 @@ nav {
 
 .projects {
   background-color: lightblue;
-  height: 42rem;
+  height: 100vh;
   width: 20rem;
   display: flex;
   flex-direction: column;
