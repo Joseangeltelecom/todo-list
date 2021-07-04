@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  height: 7rem;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 40px;
+  align-items: center;
+  color: aliceblue;
+  background-color: navy;
+}
+
+.container {
+  display: flex;
+}
+
+.projects {
+  background-color: lightblue;
+  height: 42rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task {
+  background-color: khaki;
+  width: 100%;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+h3 {
+  margin-left: 1.5rem;
+}
+
+.container-projects {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.container-task {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+/* New project Button */
+.project-button:hover {
+  padding: 0.65rem;
+  width: 100%;
+  background-color: steelblue;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.project-button {
+  margin-top: 1rem;
+  padding: 0.65rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-icon {
+  width: 25px;
+  height: 25px;
+  background: url("./img/add.svg");
+  background-size: 100% 100%;
+}
+
+/* New Project Added */
+.new-project-added {
+  padding: 0.65rem;
+  width: 100%;
+  background-color: steelblue;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.icon-list {
+  background: url(./img/list.svg);
+  height: 20px;
+  width: 20px;
+}
+
+.icon-edit {
+  background: url(./img/edit.svg);
+  height: 13px;
+  width: 13px;
+  cursor: pointer;
+}
+
+.icon-cancel {
+  background: url(./img/cancel.svg);
+  height: 13px;
+  width: 13px;
+  cursor: pointer;
+}
+
+/* Input New Project */
+.input-project {
+  margin-top: 1rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+}
+
+.input-project.active {
+  visibility: visible;
+}
+
+button {
+  padding: 1rem 1rem;
+}
+
+.input-add-project-popup {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.div-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-add-project-popup {
+  width: 45%;
+  border: 1px solid #99dd99;
+  background-color: #aaffaa;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-cancel-project-popup {
+  width: 45%;
+  border: 1px solid #eeadad;
+  background-color: #ffbebe;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-add-project-popup:hover {
+  background-color: #a6f0a6;
+}
+
+.button-cancel-project-popup:hover {
+  background-color: #f5b2b2;
+}
+
+/*  <!-- Add Task --> */
+
+.add-task-button {
+  margin-top: 1rem;
+  padding: 0.65rem;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3rem;
+}
+
+.add-task-button:hover {
+  margin-top: 1rem;
+  padding: 0.65rem;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: steelblue;
+  margin-left: 3rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.new-task-added {
+  margin-top: 1rem;
+  padding: 0.65rem;
+  width: 70%; /* Prueba borrara y dejarlo en 70% */
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 3rem;
+}
+
+.new-task-added:hover {
+  margin-top: 1rem;
+  padding: 0.65rem;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: steelblue;
+  margin-left: 3rem;
+  border-radius: 5px;
+}
+
+/* .input-project{
+  display: flex;
+} */
+
+.input-add-task-popup {
+  width: 28rem;
+  padding: 0.8rem;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.button-add-task-popup {
+  width: 45%;
+  border: 1px solid #99dd99;
+  background-color: #aaffaa;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-edit-task-popup {
+  width: 45%;
+  border: 1px solid #99dd99;
+  background-color: #aaffaa;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-cancel-task-popup {
+  width: 45%;
+  border: 1px solid #eeadad;
+  background-color: #ffbebe;
+  font-weight: bold;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-add-task-popup:hover {
+  background-color: rgb(148, 221, 148);
+}
+
+.button-edit-task-popup:hover {
+  background-color: rgb(148, 221, 148);
+}
+
+.button-cancel-task-popup:hover {
+  background-color: #f5b2b2;
+}
+
+.input-task-container {
+  width: 70%;
+  margin-top: 2rem;
+  visibility: hidden;
+}
+
+.input-task-container.active {
+  visibility: visible;
+}
+
+.div-button-task {
+  margin-left: 3rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-new-task {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  margin-left: 3rem;
+}
+
+#task-date-popup {
+  width: 45%;
+  padding: 0.8rem;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+#task-date {
+  width: 30%;
+  text-align: center;
+}
+
+#task-priority {
+  width: 11%;
+  padding: 0.5rem;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  outline: none;
+}
+
+#task-priority-popup {
+  width: 45%;
+  padding: 0.8rem;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.container-date-priority {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+.new-task-text {
+  cursor: pointer;
+  color: blue;
+}
+
+#input-details-task {
+  width: 100%;
+  margin-left: 3rem;
+  padding: 0.8rem;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+p {
+  color: black;
+}
+
+/* .overlay {
+  background: rgba(0, 0, 0, .3);
+  position: fixed; que abarce toda nuesta pantalla 
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  visibility: hidden; 
+}
+
+.overlay.active { 
+  visibility: visible;
+}
+
+.popup {
+  background: #f8f8f8;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  height: 15rem;
+  text-align: center;
+  width: 40rem;
+} */
